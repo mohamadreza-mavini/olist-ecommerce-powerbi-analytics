@@ -82,3 +82,9 @@ Reputation economics and marketplace resilience:
 ├── Olist_Analytics_Template.pbit       # Power BI Template (Data model, measures & layout)
 ├── Olist_Dashboard_Report.pdf          # Multi-page executive PDF presentation
 └── README.md                           # Business case study & documentation
+
+---
+
+## 💻 How to View the Project
+1. **Interactive Review:** Download and open `Olist_Dashboard_Report.pdf` for full visual presentation across all 3 pages.
+2. **Technical Inspection:** Download `Olist_Analytics_Template.pbit` and open with Microsoft Power BI Desktop to examine the data model, DAX measures, and UI styling.
