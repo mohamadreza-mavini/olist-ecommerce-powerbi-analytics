@@ -1,2 +1,72 @@
-# olist-ecommerce-powerbi-analytics
-End-to-End Power BI Business Intelligence Dashboard for Olist E-Commerce Dataset
+# Olist Brazilian E-Commerce Analytics & Executive BI Suite
+
+An end-to-end Power BI business intelligence solution analyzing over 100,000 real-world e-commerce orders from the Brazilian marketplace Olist. This project transforms complex relational data into actionable strategic insights across executive performance, logistics operations, and customer-seller dynamics.
+
+---
+
+## 📌 Business Overview & Objective
+Olist connects small businesses across Brazil to leading e-commerce channels. Managing a continental-scale operation introduces key operational challenges:
+* Significant regional delivery variance across Brazilian states.
+* Severe customer satisfaction churn driven by delivery delays.
+* Marketplace reliance and revenue concentration across top sellers.
+
+The goal of this project was to design an interactive, three-page executive dashboard enabling leadership to identify bottlenecks, optimize logistics routes, and protect customer lifetime value.
+
+---
+
+## 📊 Dashboard Architecture & Key Pages
+
+### 1. Executive Overview
+High-level strategic pulse of the business:
+* **Core Metrics:** Total Revenue (R$ 16.01M), Total Orders (99.4K+), Average Order Value (R$ 158.58), and 96K+ Unique Customers.
+* **Monthly Revenue Trends:** Tracking growth trajectories and identifying annual seasonal spikes (notably Black Friday surges).
+* **Category Performance:** High-margin drivers (`health_beauty`, `watches_gifts`) vs. volume drivers (`bed_bath_table`).
+* **Customer Behavior:** Payment breakdown (78% Credit Card dominance) and hourly shopping peak windows.
+
+### 2. Logistics & Operations
+Supply chain visibility and geographic bottleneck detection:
+* **Fulfillment Metrics:** 91.9% On-Time Delivery Rate, 8.1% Delay Rate, and 12.5 Days average shipping cycle.
+* **Geographic Map Distribution:** Visualizing high order concentration in South/Southeast hubs (São Paulo, Rio de Janeiro).
+* **State Risk Matrix:** Ranking shipping delay rates by state, identifying high-friction northern destinations (e.g., AL, MA, PI with >15% delay rates).
+* **Actual vs. Estimated Delivery Days:** Operational safety margin analysis across quarterly horizons.
+
+### 3. Customer & Seller Experience
+Reputation economics and marketplace resilience:
+* **Review Economics:** Platform average review score of 4.09 with 57.8% 5-star ratings vs. 11.5% 1-star ratings.
+* **Delivery Impact Correlation:** Quantifying review score drop from **4.29** (on-time orders) down to **2.57** (delayed orders).
+* **Seller Concentration:** Top 10 sellers accounting for ~13.1% of total marketplace revenue.
+
+---
+
+## 💡 Key Business Insights
+
+| Insight Area | Analytical Finding | Business Implication |
+| :--- | :--- | :--- |
+| **Logistics Bottlenecks** | Orders to remote northern states experience double the delivery cycle compared to Southeast hubs. | Freight pricing and estimated delivery promises must be dynamically regionalized. |
+| **Delay vs. Sentiment** | Shipping delays are the primary contributor to negative 1-star reviews (dropping sentiment by 1.72 points). | Delivery SLA management directly impacts repeat purchase potential. |
+| **Revenue Concentration** | 13.1% of platform GMV relies on just 10 key merchants out of 3,000+ active sellers. | Requires dedicated key-account seller management to mitigate supplier churn risk. |
+
+---
+
+## 🚀 Strategic Recommendations
+
+1. **Regional Fulfillment Hubs:** Partner with local 3PL warehousing in the Northeast corridor to reduce the 12.5-day cycle time and minimize transit risk.
+2. **Proactive SLA Buffers & Automated Care:** Automatically trigger service-recovery vouchers for shipments tracking 48+ hours past their estimated delivery date before a 1-star review is lodged.
+3. **Seller Incentive Alignment:** Tie marketplace commission discounts to seller dispatch speed and fulfillment reliability.
+
+---
+
+## 🛠️ Tech Stack & Methods
+* **BI Tool:** Microsoft Power BI Desktop
+* **Data Modeling:** Star Schema architecture, relational integrity, customized surrogate keys.
+* **Analytics Engine:** Advanced DAX (Time Intelligence, dynamic filtering, conditional formatting, dynamic segmentation).
+* **UI/UX Design:** Uniform spacing, consistent typography, custom page navigation, accessibility-conscious dark slate/plum palette.
+
+---
+
+## 📂 Repository Structure
+```text
+├── dataset/             # Source data references and metadata schemas
+├── pbix/                # Olist_Executive_Analytics.pbix (Complete Power BI File)
+├── screenshots/         # High-resolution exports of the 3 dashboard views
+└── README.md            # Project summary and business documentation
