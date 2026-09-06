@@ -23,18 +23,28 @@ High-level strategic pulse of the business:
 * **Category Performance:** High-margin drivers (`health_beauty`, `watches_gifts`) vs. volume drivers (`bed_bath_table`).
 * **Customer Behavior:** Payment breakdown (78% Credit Card dominance) and hourly shopping peak windows.
 
+![Executive Overview](01_executive_overview.png)
+
+---
+
 ### 2. Logistics & Operations
 Supply chain visibility and geographic bottleneck detection:
 * **Fulfillment Metrics:** 91.9% On-Time Delivery Rate, 8.1% Delay Rate, and 12.5 Days average shipping cycle.
-* **Geographic Map Distribution:** Visualizing high order concentration in South/Southeast hubs (São Paulo, Rio de Janeiro).
+* **Geographic Distribution:** High order concentration in South/Southeast hubs (São Paulo, Rio de Janeiro).
 * **State Risk Matrix:** Ranking shipping delay rates by state, identifying high-friction northern destinations (e.g., AL, MA, PI with >15% delay rates).
 * **Actual vs. Estimated Delivery Days:** Operational safety margin analysis across quarterly horizons.
+
+![Logistics & Operations](02_logistics_operations.png)
+
+---
 
 ### 3. Customer & Seller Experience
 Reputation economics and marketplace resilience:
 * **Review Economics:** Platform average review score of 4.09 with 57.8% 5-star ratings vs. 11.5% 1-star ratings.
 * **Delivery Impact Correlation:** Quantifying review score drop from **4.29** (on-time orders) down to **2.57** (delayed orders).
 * **Seller Concentration:** Top 10 sellers accounting for ~13.1% of total marketplace revenue.
+
+![Customer & Seller Experience](03_customer_seller_experience.png)
 
 ---
 
@@ -51,7 +61,7 @@ Reputation economics and marketplace resilience:
 ## 🚀 Strategic Recommendations
 
 1. **Regional Fulfillment Hubs:** Partner with local 3PL warehousing in the Northeast corridor to reduce the 12.5-day cycle time and minimize transit risk.
-2. **Proactive SLA Buffers & Automated Care:** Automatically trigger service-recovery vouchers for shipments tracking 48+ hours past their estimated delivery date before a 1-star review is lodged.
+2. **Proactive SLA Buffers & Automated Care:** Automatically trigger service-recovery vouchers for shipments tracking past their estimated delivery date before a 1-star review is lodged.
 3. **Seller Incentive Alignment:** Tie marketplace commission discounts to seller dispatch speed and fulfillment reliability.
 
 ---
@@ -66,7 +76,9 @@ Reputation economics and marketplace resilience:
 
 ## 📂 Repository Structure
 ```text
-├── dataset/             # Source data references and metadata schemas
-├── pbix/                # Olist_Executive_Analytics.pbix (Complete Power BI File)
-├── screenshots/         # High-resolution exports of the 3 dashboard views
-└── README.md            # Project summary and business documentation
+├── 01_executive_overview.png           # High-resolution screenshot of Page 1
+├── 02_logistics_operations.png          # High-resolution screenshot of Page 2
+├── 03_customer_seller_experience.png   # High-resolution screenshot of Page 3
+├── Olist_Analytics_Template.pbit       # Power BI Template (Data model, measures & layout)
+├── Olist_Dashboard_Report.pdf          # Multi-page executive PDF presentation
+└── README.md                           # Business case study & documentation
